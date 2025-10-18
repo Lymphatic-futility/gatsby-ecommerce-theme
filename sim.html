@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simphiwe Vilakati | Personal Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: linear-gradient(135deg, #ffe6f0, #f7c8e0);
+      color: #4a0035;
+      overflow-x: hidden;
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 22px;
+      color: #e60073;
+      animation: fadeInDown 1s ease;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #4a0035;
+      margin: 0 12px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #e60073;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 100px 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    #home h2 {
+      font-size: 38px;
+      margin-bottom: 10px;
+      color: #e60073;
+      animation: slideUp 1s ease;
+    }
+
+    #home p {
+      font-size: 18px;
+      max-width: 600px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    button {
+      margin-top: 20px;
+      background: #e60073;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #ff4081;
+      transform: scale(1.05);
+    }
+
+    #about {
+      background: white;
+      border-radius: 20px;
+      margin: 50px 0;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      padding: 60px 30px;
+    }
+
+    #about h3 {
+      color: #e60073;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    #about p {
+      color: #4a0035;
+      line-height: 1.8;
+      font-size: 17px;
+    }
+
+    footer {
+      background: #e60073;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 15px;
+      margin-top: 50px;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes slideUp {
+      from {transform: translateY(20px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+
+    @keyframes fadeInDown {
+      from {transform: translateY(-20px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Simphiwe 💖</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Hello, I'm Simphiwe Vilakati</h2>
+    <p>A creative, kind-hearted girl who believes in love, purpose, and spreading positivity wherever she goes 🌸.</p>
+    <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Discover More</button>
+  </section>
+
+  <section id="about">
+    <h3>About Me</h3>
+    <p>
+      I'm a passionate young woman who loves to learn, laugh, and inspire others.  
+      Whether it's through art, friendship, or helping people, I always try to bring light to every space I enter.  
+      I believe that beauty is not only seen but felt — and kindness is the best glow any girl can wear. 💫
+    </p>
+  </section>
+
+  <section id="gallery">
+    <h3>My Gallery</h3>
+    <p>✨ Coming soon: beautiful moments of Simphiwe’s journey ✨</p>
+  </section>
+
+  <section id="contact">
+    <h3>Get In Touch</h3>
+    <p>Want to say hello? Reach out at: <strong>simphiwe.vilakati@example.com</strong></p>
+  </section>
+
+  <footer>
+    © 2025 Simphiwe Vilakati | Made with 💖 by Snowman
+  </footer>
+
+</body>
+</html>
